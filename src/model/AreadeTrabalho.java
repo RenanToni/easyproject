@@ -1,14 +1,14 @@
 package model;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class AreadeTrabalho {
 	private Long idArea;
 	private String nome;
-	private ArrayList<Quadro> quadro = new ArrayList<Quadro>();
+	private List<Quadro> quadro;
 	
 	
-	public AreadeTrabalho(String nome, ArrayList<Quadro> quadro) {
+	public AreadeTrabalho(String nome, List<Quadro> quadro) {
 		super();
 		this.nome = nome;
 		this.quadro = quadro;
@@ -25,10 +25,10 @@ public class AreadeTrabalho {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public ArrayList<Quadro> getQuadro() {
+	public List<Quadro> getQuadro() {
 		return quadro;
 	}
-	public void setQuadro(ArrayList<Quadro> quadro) {
+	public void setQuadro(List<Quadro> quadro) {
 		this.quadro = quadro;
 	}
 	
